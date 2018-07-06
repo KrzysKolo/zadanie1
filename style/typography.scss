@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt%7cSigmar+One);
+// font family
+$font-family-primary: 'Roboto Slab', serif;
+$font-family-secondary: 'Josefin Slab', serif;
+$font-family-naglowek:'Sigmar One', cursive;
+$font-family-kontakt: 'Rock Salt', cursive;
+
+// zmienne tekst
+$basic-font-size: 16px;
+// odległości miedzy literami
+$basic-letter-spacing: 0.5rem;
+$letter-spacing-h1: 3px;
+$letter-spacing-h6: 0.1px;
+@mixin text-transform{
+     text-transform: uppercase;
+}

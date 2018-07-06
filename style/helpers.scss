@@ -1,0 +1,94 @@
+
+// Wyrównanie, pozycjonowanie
+@mixin basic-padding {
+    padding: 0;
+} 
+@mixin wysrodkowanie {
+    margin: 0 auto;
+}
+@mixin center-text {
+	text-align: center;
+}
+@mixin left-text {
+	text-align: left;
+}
+@mixin float-left {
+	float: left;
+}
+@mixin float-right {
+	float: right;
+}
+@mixin float-none {
+	float: none;
+}
+@mixin center-no-float {
+	@include float-none;
+	@include center-text;
+}
+@mixin no-center-float {
+	@include float-left;
+	text-align: initial;
+}
+// wyrównanie w pionie 
+@mixin central-vertical {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+// Widoczność
+@mixin inivisible {
+	display : none;
+}
+@mixin inline-block {
+	display: inline-block;
+}
+@mixin block {
+	display: block;
+}
+
+// rozmiar 
+@mixin absolute-one-hundert-size {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@mixin size($width,$height)
+ {
+	width: $width;
+	height: $height;
+}
+
+//listy
+@mixin list-style-none {
+	list-style-type: none;
+}
+
+@mixin sekcja {
+	text-align: center;
+	padding: 0 15px;
+}
+@mixin pasek {
+    width: 100%;
+	height: 20px;
+	min-height: 5px;
+}
+@mixin ico {
+    width: 80px;
+	height: 80px;
+	color: #C4A980;
+	margin: 0 auto;
+	line-height: 80px;
+	font-size: 46px;
+	border-radius: 15%;
+	box-shadow: #666 2px -3px 5px;
+}
+@mixin transition {
+    transition: ease-in-out 0.5s;
+}
+@mixin galeria {
+    width: 100%;
+    height: 100%;
+}

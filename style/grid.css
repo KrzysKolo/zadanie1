@@ -1,0 +1,10 @@
+[class*="col-"] {
+  float: left;
+  min-height: 1px; }
+
+[class*="col-offset-"] {
+  overflow: hidden;
+  height: auto;
+  display: inline-block; }
+
+/*# sourceMappingURL=grid.css.map */
